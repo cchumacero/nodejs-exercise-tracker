@@ -5,7 +5,8 @@
 	"main": "index.js",
 	"type": "module",
 	"scripts": {
-		"start": "node index.js"
+		"start": "node index.js",
+		"lint": "eslint ."
 	},
 	"dependencies": {
 		"cors": "2.8.5",
@@ -25,6 +26,6 @@
 		"standard": "^17.1.0"
 	},
 	"eslintConfig": {
-		"extends": "standard"
+		"extends": "./node_modules/standard/eslintrc.json"
 	}
 }
